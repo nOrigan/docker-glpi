@@ -20,8 +20,8 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /docker/glpi/etc/timezone:/etc/timezone:ro
-      - /docker/glpi/etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - /docker/glpi/var/www/html/glpi/:/var/www/html/glpi
     environment:
       - TIMEZONE=Europe/Brussels
